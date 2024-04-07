@@ -1,0 +1,72 @@
+Answer to 1.1: 
+{'Toy Story (1995)': [4.0, 4.0, 4.5, 2.5, 4.5, 3.5], 'Jumanji (1995)': [4.0, 4.0, 3.0, 3.0, 3.0, 3.5], 'Tom and Huck (1995)': [3.0, 1.0, 5.0, 3.0, 2.0, 3.0], 'Grumpier Old Men (1995)': [4.0, 5.0, 3.0, 3.0, 4.0, 5.0], 'Waiting to Exhale (1995)': [3.0, 3.0, 3.0, 3.0, 1.0, 2.0], 'Father of the Bride Part II (1995)': [5.0, 3.0, 5.0, 3.0, 4.0, 4.0], 'Heat (1995)': [4.0, 4.0, 5.0, 4.0, 4.0, 4.5], 'Sudden Death (1995)': [4.0, 3.0, 3.0, 2.0, 3.0, 5.0], 'GoldenEye (1995)': [3.0, 2.0, 3.0, 2.0, 5.0, 3.0]}
+ 
+Answer to 1.2: 
+{'Toy Story (1995)': 'Adventure', 'Jumanji (1995)': 'Adventure', 'Tom and Huck (1995)': 'Adventure', 'Grumpier Old Men (1995)': 'Comedy', 'Waiting to Exhale (1995)': 'Comedy', 'Father of the Bride Part II (1995)': 'Comedy', 'Heat (1995)': 'Action', 'Sudden Death (1995)': 'Action', 'GoldenEye (1995)': 'Action'}
+ 
+Answer to 2.1:
+{'Adventure': ['Toy Story (1995)', 'Jumanji (1995)', 'Tom and Huck (1995)'], 'Comedy': ['Grumpier Old Men (1995)', 'Waiting to Exhale (1995)', 'Father of the Bride Part II (1995)'], 'Action': ['Heat (1995)', 'Sudden Death (1995)', 'GoldenEye (1995)']}
+ 
+Answer to 2.2:
+{'Toy Story (1995)': 3.8333333333333335, 'Jumanji (1995)': 3.4166666666666665, 'Tom and Huck (1995)': 2.8333333333333335, 'Grumpier Old Men (1995)': 4.0, 'Waiting to Exhale (1995)': 2.5, 'Father of the Bride Part II (1995)': 4.0, 'Heat (1995)': 4.25, 'Sudden Death (1995)': 3.3333333333333335, 'GoldenEye (1995)': 3.0}
+ 
+Answer to 3.1:
+{'Heat (1995)': 4.25, 'Grumpier Old Men (1995)': 4.0, 'Father of the Bride Part II (1995)': 4.0, 'Toy Story (1995)': 3.8333333333333335, 'Jumanji (1995)': 3.4166666666666665, 'Sudden Death (1995)': 3.3333333333333335, 'GoldenEye (1995)': 3.0, 'Tom and Huck (1995)': 2.8333333333333335, 'Waiting to Exhale (1995)': 2.5}
+top 3 ratings: 
+{'Heat (1995)': 4.25, 'Grumpier Old Men (1995)': 4.0, 'Father of the Bride Part II (1995)': 4.0}
+ 
+Answer to 3.2:
+Threshold rating is 3
+{'Toy Story (1995)': 3.8333333333333335, 'Jumanji (1995)': 3.4166666666666665, 'Grumpier Old Men (1995)': 4.0, 'Father of the Bride Part II (1995)': 4.0, 'Heat (1995)': 4.25, 'Sudden Death (1995)': 3.3333333333333335, 'GoldenEye (1995)': 3.0}
+Threshold rating is 4
+{'Grumpier Old Men (1995)': 4.0, 'Father of the Bride Part II (1995)': 4.0, 'Heat (1995)': 4.25}
+ 
+Answer to 3.3:
+{'Heat (1995)': 4.25, 'Sudden Death (1995)': 3.3333333333333335, 'GoldenEye (1995)': 3.0}
+ 
+Answer to 3.4:
+The Average is
+3.527777777777778
+ 
+Answer to 3.5:
+{'Action': 3.527777777777778, 'Comedy': 3.5, 'Adventure': 3.361111111111111}
+ 
+Answer to 4.1:
+{'1': [('Toy Story (1995)', '4.0'), ('Grumpier Old Men (1995)', '4.0'), ('Heat (1995)', '4.0')], '5': [('Toy Story (1995)', '4.0')], '7': [('Toy Story (1995)', '4.5')], '15': [('Toy Story (1995)', '2.5')], '17': [('Toy Story (1995)', '4.5')], '18': [('Toy Story (1995)', '3.5'), ('Jumanji (1995)', '3.0'), ('Heat (1995)', '4.0')], '6': [('Jumanji (1995)', '4.0'), ('Tom and Huck (1995)', '3.0'), ('Grumpier Old Men (1995)', '5.0'), ('Waiting to Exhale (1995)', '3.0'), ('Father of the Bride Part II (1995)', '5.0'), ('Heat (1995)', '4.0'), ('GoldenEye (1995)', '3.0')], '8': [('Jumanji (1995)', '4.0'), ('GoldenEye (1995)', '2.0')], '19': [('Jumanji (1995)', '3.0'), ('Grumpier Old Men (1995)', '3.0'), ('GoldenEye (1995)', '2.0')], '20': [('Jumanji 
+ar@nbp-151-74 210HW1 % /usr/local/bin/python3 /Users/ar/Desktop/210HW1/hw1.py                                 
+ 
+Answer to 1.1: 
+{'Toy Story (1995)': [4.0, 4.0, 4.5, 2.5, 4.5, 3.5], 'Jumanji (1995)': [4.0, 4.0, 3.0, 3.0, 3.0, 3.5], 'Tom and Huck (1995)': [3.0, 1.0, 5.0, 3.0, 2.0, 3.0], 'Grumpier Old Men (1995)': [4.0, 5.0, 3.0, 3.0, 4.0, 5.0], 'Waiting to Exhale (1995)': [3.0, 3.0, 3.0, 3.0, 1.0, 2.0], 'Father of the Bride Part II (1995)': [5.0, 3.0, 5.0, 3.0, 4.0, 4.0], 'Heat (1995)': [4.0, 4.0, 5.0, 4.0, 4.0, 4.5], 'Sudden Death (1995)': [4.0, 3.0, 3.0, 2.0, 3.0, 5.0], 'GoldenEye (1995)': [3.0, 2.0, 3.0, 2.0, 5.0, 3.0]}
+ 
+Answer to 1.2: 
+{'Toy Story (1995)': 'Adventure', 'Jumanji (1995)': 'Adventure', 'Tom and Huck (1995)': 'Adventure', 'Grumpier Old Men (1995)': 'Comedy', 'Waiting to Exhale (1995)': 'Comedy', 'Father of the Bride Part II (1995)': 'Comedy', 'Heat (1995)': 'Action', 'Sudden Death (1995)': 'Action', 'GoldenEye (1995)': 'Action'}
+ 
+Answer to 2.1:
+{'Adventure': ['Toy Story (1995)', 'Jumanji (1995)', 'Tom and Huck (1995)'], 'Comedy': ['Grumpier Old Men (1995)', 'Waiting to Exhale (1995)', 'Father of the Bride Part II (1995)'], 'Action': ['Heat (1995)', 'Sudden Death (1995)', 'GoldenEye (1995)']}
+ 
+Answer to 2.2:
+{'Toy Story (1995)': 3.8333333333333335, 'Jumanji (1995)': 3.4166666666666665, 'Tom and Huck (1995)': 2.8333333333333335, 'Grumpier Old Men (1995)': 4.0, 'Waiting to Exhale (1995)': 2.5, 'Father of the Bride Part II (1995)': 4.0, 'Heat (1995)': 4.25, 'Sudden Death (1995)': 3.3333333333333335, 'GoldenEye (1995)': 3.0}
+ 
+Answer to 3.1:
+{'Heat (1995)': 4.25, 'Grumpier Old Men (1995)': 4.0, 'Father of the Bride Part II (1995)': 4.0, 'Toy Story (1995)': 3.8333333333333335, 'Jumanji (1995)': 3.4166666666666665, 'Sudden Death (1995)': 3.3333333333333335, 'GoldenEye (1995)': 3.0, 'Tom and Huck (1995)': 2.8333333333333335, 'Waiting to Exhale (1995)': 2.5}
+top 3 ratings: 
+{'Heat (1995)': 4.25, 'Grumpier Old Men (1995)': 4.0, 'Father of the Bride Part II (1995)': 4.0}
+ 
+Answer to 3.2:
+Threshold rating is 3
+{'Toy Story (1995)': 3.8333333333333335, 'Jumanji (1995)': 3.4166666666666665, 'Grumpier Old Men (1995)': 4.0, 'Father of the Bride Part II (1995)': 4.0, 'Heat (1995)': 4.25, 'Sudden Death (1995)': 3.3333333333333335, 'GoldenEye (1995)': 3.0}
+Threshold rating is 4
+{'Grumpier Old Men (1995)': 4.0, 'Father of the Bride Part II (1995)': 4.0, 'Heat (1995)': 4.25}
+ 
+Answer to 3.3:
+{'Heat (1995)': 4.25, 'Sudden Death (1995)': 3.3333333333333335, 'GoldenEye (1995)': 3.0}
+ 
+Answer to 3.4:
+The Average is
+3.527777777777778
+ 
+Answer to 3.5:
+{'Action': 3.527777777777778, 'Comedy': 3.5, 'Adventure': 3.361111111111111}
+ 
+Answer to 4.1:
+{'1': [('Toy Story (1995)', '4.0'), ('Grumpier Old Men (1995)', '4.0'), ('Heat (1995)', '4.0')], '5': [('Toy Story (1995)', '4.0')], '7': [('Toy Story (1995)', '4.5')], '15': [('Toy Story (1995)', '2.5')], '17': [('Toy Story (1995)', '4.5')], '18': [('Toy Story (1995)', '3.5'), ('Jumanji (1995)', '3.0'), ('Heat (1995)', '4.0')], '6': [('Jumanji (1995)', '4.0'), ('Tom and Huck (1995)', '3.0'), ('Grumpier Old Men (1995)', '5.0'), ('Waiting to Exhale (1995)', '3.0'), ('Father of the Bride Part II (1995)', '5.0'), ('Heat (1995)', '4.0'), ('GoldenEye (1995)', '3.0')], '8': [('Jumanji (1995)', '4.0'), ('GoldenEye (1995)', '2.0')], '19': [('Jumanji (1995)', '3.0'), ('Grumpier Old Men (1995)', '3.0'), ('GoldenEye (1995)', '2.0')], '20': [('Jumanji (1995)', '3.0'), ('Tom and Huck (1995)', '1.0')], '21': [('Jumanji (1995)', '3.5'), ('GoldenEye (1995)', '5.0')], '43': [('Tom and Huck (1995)', '5.0'), ('Grumpier Old Men (1995)', '5.0'), ('Father of the Bride Part II (1995)', '5.0')], '274': [('Tom and Huck (1995)', '3.0')], '372': [('Tom and Huck (1995)', '2.0')], '414': [('Tom and Huck (1995)', '3.0')], '32': [('Grumpier Old Men (1995)', '3.0')], '42': [('Grumpier Old Men (1995)', '4.0')], '14': [('Waiting to Exhale (1995)', '3.0')], '84': [('Waiting to Exhale (1995)', '3.0')], '162': [('Waiting to Exhale (1995)', '3.0')], '262': [('Waiting to Exhale (1995)', '1.0')], '411': [('Waiting to Exhale (1995)', '2.0')], '31': [('Father of the Bride Part II (1995)', '3.0')], '45': [('Father of the Bride Part II (1995)', '3.0')], '58': [('Father of the Bride Part II (1995)', '4.0')], '66': [('Father of the Bride Part II (1995)', '4.0')], '11': [('Heat (1995)', '5.0'), ('GoldenEye (1995)', '3.0')], '23': [('Heat (1995)', '4.0')], '24': [('Heat (1995)', '4.5')], '151': [('Sudden Death (1995)', '4.0')], '179': [('Sudden Death (1995)', '3.0')], '217': [('Sudden Death (1995)', '3.0')], '269': [('Sudden Death (1995)', '2.0')], '270': [('Sudden Death (1995)', '3.0')], '337': [('Sudden Death (1995)', '5.0')], '26': [('GoldenEye (1995)', '3.0')]}
