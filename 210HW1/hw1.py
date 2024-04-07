@@ -1,23 +1,12 @@
 # Name: Aarti Rao
 # Data Management for Data Science Assignment 1
-# FILL IN ALL THE FUNCTIONS IN THIS TEMPLATE
-# MAKE SURE YOU TEST YOUR FUNCTIONS WITH MULTIPLE TEST CASES
-# ASIDE FROM THE SAMPLE FILES PROVIDED TO YOU, TEST ON YOUR OWN FILES
-
-# WHEN DONE, SUBMIT THIS FILE TO CANVAS
 
 from collections import defaultdict
 from collections import Counter
 
-# YOU MAY NOT CODE ANY OTHER IMPORTS
-
-# ------ TASK 1: READING DATA  --------
-
-# 1.1
 def read_ratings_data(f):
     # parameter f: movie ratings file name f (e.g. "movieRatingSample.txt")
     # return: dictionary that maps movie to ratings
-    # WRITE YOUR CODE BELOW
     movie_ratings_dictionary = {}
     lines = f.readlines() #takes in rating file name and returns a dictionary
     for line in lines: #taking this through each line of the file
@@ -32,11 +21,9 @@ def read_ratings_data(f):
     #pass
     
 
-# 1.2
 def read_movie_genre(f):
     # parameter f: movies genre file name f (e.g. "genreMovieSample.txt")
     # return: dictionary that maps movie to genre
-    # WRITE YOUR CODE BELOW
     movie_genre_dictionary ={}
     lines = f.readlines() #reads the lines of the file
     for line in lines: #goes through the entire file
@@ -45,16 +32,11 @@ def read_movie_genre(f):
         movie = words[2].strip()#keep in mind the third index is the movie, not the second according to the sample file
         movie_genre_dictionary[movie] = genre #map from movie to genre
     return movie_genre_dictionary #return the dictionary
-        
-    #pass
-
-# ------ TASK 2: PROCESSING DATA --------
 
 # 2.1
 def create_genre_dict(d):
     # parameter d: dictionary that maps movie to genre
     # return: dictionary that maps genre to movies
-    # WRITE YOUR CODE BELOW
     genre_dictionary ={}
     lines = d.items()
     for movie, genre in lines: #iterates through the input file
@@ -70,7 +52,6 @@ def create_genre_dict(d):
 def calculate_average_rating(d):
     # parameter d: dictionary that maps movie to ratings
     # return: dictionary that maps movie to average rating
-    # WRITE YOUR CODE BELOW
     avg_Arr = {}
     lines = d.items()
     for movie, rate in lines: #itirates through the input file
@@ -78,17 +59,13 @@ def calculate_average_rating(d):
             avg = (sum(rate))/(len(rate)) #calculates the average rating for each movie
             avg_Arr[movie] = avg #maps the movie to the average rating
     return avg_Arr #returns dictionary
-    #pass
-    
-# ------ TASK 3: RECOMMENDATION --------
 
-# 3.1
+
 def get_popular_movies(d, n=10):
     # parameter d: dictionary that maps movie to average rating
     # parameter n: integer (for top n), default value 10
     # return: dictionary that maps movie to average rating, 
     #in ranked order from highest to lowest average rating
-    # WRITE YOUR CODE BELOW
     lines = d.items()
     popular = sorted(lines, key = lambda x: x[1], reverse = True) #using lambda to sort the dictionary from highest rating to lowest rating
     sorted_dict=dict(popular[:n]) #sort the dictionary by the average
@@ -98,12 +75,11 @@ def get_popular_movies(d, n=10):
         return dict(popular[:n]) #return the top n items
     #pass
     
-# 3.2
+
 def filter_movies(d, thres_rating=3):
     # parameter d: dictionary that maps movie to average rating
     # parameter thres_rating: threshold rating, default value 3
     # return: dictionary that maps movie to average rating
-    # WRITE YOUR CODE BELOW
     lines = d.items()
     filt_mov={} 
     for movie, rate in lines: #for iteration through the file
@@ -112,14 +88,12 @@ def filter_movies(d, thres_rating=3):
     return filt_mov #return the filtered movie
     #pass
     
-# 3.3
 def get_popular_in_genre(genre, genre_to_movies, movie_to_average_rating, n=5):
     # parameter genre: genre name (e.g. "Comedy")
     # parameter genre_to_movies: dictionary that maps genre to movies
     # parameter movie_to_average_rating: dictionary  that maps movie to average rating
     # parameter n: integer (for top n), default value 5
     # return: dictionary that maps movie to average rating
-    # WRITE YOUR CODE BELOW
     genre1 = genre_to_movies.get(genre) #get the genre name
     genre_rate = {} #dictionary that will do a movie to average rating of movies
     for movies in genre1: 
@@ -131,13 +105,12 @@ def get_popular_in_genre(genre, genre_to_movies, movie_to_average_rating, n=5):
     return dict(cnt.most_common(n)) #return the movies as per the value of n
     pass
     
-# 3.4
+
 def get_genre_rating(genre, genre_to_movies, movie_to_average_rating):
     # parameter genre: genre name (e.g. "Comedy")
     # parameter genre_to_movies: dictionary that maps genre to movies
     # parameter movie_to_average_rating: dictionary  that maps movie to average rating
     # return: average rating of movies in genre
-    # WRITE YOUR CODE BELOW
     if genre in genre_to_movies:
         genre1 = genre_to_movies.get(genre) #get the genre name
     
@@ -153,13 +126,12 @@ def get_genre_rating(genre, genre_to_movies, movie_to_average_rating):
     return avg #return the average
     pass
     
-# 3.5
+
 def genre_popularity(genre_to_movies, movie_to_average_rating, n=5):
     # parameter genre_to_movies: dictionary that maps genre to movies
     # parameter movie_to_average_rating: dictionary  that maps movie to average rating
     # parameter n: integer (for top n), default value 5
     # return: dictionary that maps genre to average rating
-    # WRITE YOUR CODE BELOW
     cnt = Counter() #initialize counter
     
     for genre in genre_to_movies: #using code from 3.4
@@ -179,14 +151,10 @@ def genre_popularity(genre_to_movies, movie_to_average_rating, n=5):
     return dict(cnt.most_common(n)) #return the movies as per the value of n
     pass
 
-# ------ TASK 4: USER FOCUSED  --------
 
-# 4.1
 def read_user_ratings(f):
     # parameter f: movie ratings file name (e.g. "movieRatingSample.txt")
     # return: dictionary that maps user to list of (movie,rating)
-    # WRITE YOUR CODE BELOW
-    
     u_ratings_dictionary = {}
     #lines = f.readlines() #takes in rating file name and returns a dictionary
     for line in open(f): #taking this through each line of the file
@@ -199,7 +167,7 @@ def read_user_ratings(f):
     return u_ratings_dictionary #returns dictionary with 1 to 1 mapping from movie to genre
     #pass
     
-# 4.2
+
 def get_user_genre(user_id, user_to_movies, movie_to_genre):
     dict_genre_ratings = {}
     average = {}
@@ -218,23 +186,10 @@ def get_user_genre(user_id, user_to_movies, movie_to_genre):
     # parameter user_to_movies: dictionary that maps user to movies and ratings
     # parameter movie_to_genre: dictionary that maps movie to genre
     # return: top genre that user likes
-    # WRITE YOUR CODE BELOW
-
-# 4.3    
-def recommend_movies(user_id, user_to_movies, movie_to_genre, movie_to_average_rating):
-    # parameter user_id: user id
-    # parameter user_to_movies: dictionary that maps user to movies and ratings
-    # parameter movie_to_genre: dictionary that maps movie to genre
-    # parameter movie_to_average_rating: dictionary that maps movie to average rating
-    # return: dictionary that maps movie to average rating
-    # WRITE YOUR CODE BELOW
     
-    pass
 
-# -------- main function for your testing -----
 def main():
-     # write all your test code here
-    # this function will be ignored by us when grading
+#testing done in main function
     filename = open("movieRatingSample.txt")
     movie_rate = read_ratings_data(filename)
     print(" ")
